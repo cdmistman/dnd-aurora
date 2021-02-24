@@ -4,7 +4,7 @@
 		<name>DND Rats</name>
 		<description>Custom values that are needed for DND Rats that Aurora won't let us manage ourselves</description>
 		<author url="https://github.com/cdmistman/dnd-aurora">Erdan Hith</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="sources.xml" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/dnd-rats/sources.xml"/>
 		</update>
 	</info>
