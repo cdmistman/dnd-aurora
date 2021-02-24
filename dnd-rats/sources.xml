@@ -24,7 +24,7 @@
 			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_BRIGANDINE_ARMOR</set>
 		</setters>
 		<rules>
-			<stat name="ac:armored:armor" value="11"/>
+			<stat name="ac:armored:armor" value="13"/>
 		</rules>
 	</element>
 </elements>
