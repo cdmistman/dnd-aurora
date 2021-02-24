@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>DND Rats</name>
+		<description>Custom values that are needed for DND Rats that Aurora won't let us manage ourselves</description>
+		<author url="https://github.com/cdmistman/dnd-aurora">Erdan Hith</author>
+		<update version="0.0.1">
+			<file name="brigandine-armor.xml" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/dnd-rats/brigandine-armor.xml"/>
+		</update>
+	</info>
+
+	<element name="Brigandine Armor" type="Armor" source="Bjorn's DND Rats" id="ID_ERDAN_ARMOR_LIGHT_BRIGANDINEARMOR">
+		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p>TODO</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">350</set>
+			<set name="weight" lb="10">350 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Medium</set>
+			<set name="armorClass">13 + Dex modifier</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_BRIGANDINE_ARMOR</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="11"/>
+		</rules>
+	</element>
+</elements>
