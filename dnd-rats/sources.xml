@@ -4,13 +4,13 @@
 		<name>DND Rats</name>
 		<description>Custom values that are needed for DND Rats that Aurora won't let us manage ourselves</description>
 		<author url="https://github.com/cdmistman/dnd-aurora">Erdan Hith</author>
-		<update version="0.0.1">
-			<file name="brigandine-armor.xml" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/dnd-rats/brigandine-armor.xml"/>
+		<update version="0.0.2">
+			<file name="sources.xml" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/dnd-rats/sources.xml"/>
 		</update>
 	</info>
 
 	<element name="Brigandine Armor" type="Armor" source="Bjorn's DND Rats" id="ID_ERDAN_ARMOR_LIGHT_BRIGANDINEARMOR">
-		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
 		<description>
 			<p>TODO</p>
 		</description>
