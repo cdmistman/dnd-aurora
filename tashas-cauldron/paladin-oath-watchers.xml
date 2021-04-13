@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<name>Oath of the Watchers</name>
+	<update version="0.0.1">
+		<file name="paladin-oath-watchers" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/tashas-cauldron/paladin-oath-watchers.xml" />
+	</update>
+
+	<element name="Oath of the Watchers" type="Archetype" source="Tasha's Cauldron of Everything" id="ID_TCOE_ARCHETYPE_OATH_OF_THE_WATCHERS">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>The Oath of the Watchers binds Paladins to protect mortal realms from the predations of extraplanar creatures, many of which can lay waste to mortal soldiers. Thus, the Watchers hone their minds, spirits, and bodies to be the ultimate weapons against such threats.</p>
+			<p class="indent">Paladins who follow the Watchers' Oath are ever-vigilant in spotting the influence of extraplanar forces, often establishing a network of spies and informants to gather information on suspected cults. To a Watcher, keeping a healthy suspicion and awareness about one's surrondings is as natural as wearing armor in battle.</p>
+			<h5>TENETS OF THE WATCHERS</h5>
+			<p>A paladin who assumes the Oath of the Watchers swears to safeguard mortal realms from otherworldly threats.</p>
+			<p class="ident"><b><i>Vigilance.</i></b> The threats you face are cunning, powerful, and subversive. Be ever alert for their corruption.</p>
+			<p class="ident"><b><i>Loyalty.</i></b> Never accept gifts or favors from fiends or those who truck with them. Stay true to your order, your comrades, and your duty.</p>
+			<p class="ident"><b><i>Discipline.</i></b> You are the shield against the endless terrors that lie beyond the stars. Your blade must be forever sharp and your mind keen to survive what lies beyond.</p>
+		</description>
+			<div element="ID_TCOE_ARCHETYPE_FEATURE_OATH_OF_THE_WATCHERS_OATH_SPELLS" />
+			<div element="ID_TCOE_ARCHETYPE_FEATURE_OATH_OF_THE_WATCHERS_CHANNEL_DIVINITY" /> <div element="ID_TCOE_ARCHETYPE_FEATURE_OATH_OF_THE_WATCHERS_AURA_OF_THE_SENTINEL" />
+			<div element="ID_TCOE_ARCHETYPE_FEATURE_OATH_OF_THE_WATCHERS_VIGILANT_REBUKE" />
+			<div element="ID_TCOE_ARCHETYPE_FEATURE_OATH_OF_THE_WATCHERS_MORTAL_BULWARK" />
+	</element>
+	<sheet>
+		<description>Paladins who follow the Watchers' Oath are ever-vigilant in spotting the influence of extraplanar forces, often establishing a network of spies and informants to gather information on suspected cults. To a Watcher, keeping a healthy suspicion and awareness about one's surrondings is as natural as wearing armor in battle.</description>
+	</sheet>
+	<rules>
+		<grant type="Archetype Feature" id="ID_TCOE_ARCHETYPE_FEATURE_OATH_OF_THE_WATCHERS_OATH_SPELLS" />
+		<grant type="Archetype Feature" id="ID_TCOE_ARCHETYPE_FEATURE_OATH_OF_THE_WATCHERS_CHANNEL_DIVINITY" />
+		<grant type="Archetype Feature" id="ID_TCOE_ARCHETYPE_FEATURE_OATH_OF_THE_WATCHERS_AURA_OF_THE_SENTINEL" />
+		<grant type="Archetype Feature" id="ID_TCOE_ARCHETYPE_FEATURE_OATH_OF_THE_WATCHERS_VIGILANT_REBUKE" />
+		<grant type="Archetype Feature" id="ID_TCOE_ARCHETYPE_FEATURE_OATH_OF_THE_WATCHERS_MORTAL_BULWARK" />
+	</rules>
+	<element name="Oath Spells" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_TCOE_ARCHETYPE_FEATURE_OATH_OF_THE_WATCHERS_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed in the Oath of the Watchers Spells table. See the Sacred Oath class feature for how oath spells work.</p>
+			<h5>Oath of the Watchers Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>alarm, detect magic</em></td></tr>
+				<tr><td>5th</td><td><em>moonbeam, see invisibility</em></td></tr>
+				<tr><td>9th</td><td><em>counterspell, nondetection</em></td></tr>
+				<tr><td>13th</td><td><em>aura of purity, banishment</em></td></tr>
+				<tr><td>17th</td><td><em>hold monster, scrying</em></td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You gain oath spells at the paladin levels listed in the Oath of the Watchers Spells table. See the Sacred Oath class feature for how oath spells work.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ALARM" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SEE_INVISIBILITY" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COUNTERSPELL" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_PURITY" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SCRYING" level="17" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_TCOE_ARCHETYPE_FEATURE_OATH_OF_THE_WATCHERS_CHANNEL_DIVINITY">
+		<description>
+			<p>You gain the following Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.</p>
+			<p class="indent"><b><i>Watcher's Will.</i></b> You can use your Channel Divinity to invest your presence with the warding power of your faith. As an action, you can choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of 1 creature). For 1 minute, you and the chosen creatures have advantage on Intelligence, Wisdom, and Charisma saving throws.</p>
+			<p class="indent"><b><i>Abjure the Extraplanar.</i></b> You can use your Channel Divinity to castigate unwordly beings. As an action, you present your holy symbol and each aberration, celestial, elemental, fey, or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.</p>
+			<p class="indent">A turned creature must spend its turns trying to move as far away from you as it can, and it</p>
+		</description>
+	</element>
+	<element name="Channel Divinity: Watcher's Will">
+		<description>
+			<p>You can use your Channel Divinity to invest your presence with the warding power of your faith. As an action, you can choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of 1 creature). For 1 minute, you and the chosen creatures have advantage on Intelligence, Wisdom, and Charisma saving throws.</p>
+		</description>
+		<sheet>
+			<description>As an action, you can choose {{watchers will:targets}} of creatures you can see within 30 feet of you. For 1 minute, you and the chosen creatures have advantage on Intelligence, Wisdom, and Charisma saving throws.</description>
+		</sheet>
+		<rules>
+			<stat name="watchers will:targets" value="1" bonus="base"/>
+			<stat name="watchers will:targets" value="charisma:modifier" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Channel Divinity: Abjure the Extraplanar">
+		<description>
+			<p>You can use your Channel Divinity to castigate unwordly beings. As an action, you present your holy symbol and each aberration, celestial, elemental, fey, or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.</p>
+		</description>
+		<sheet>
+			<description>As an action, you present your holy symbol and each aberration, celestial, elemental, fey, or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.</description>
+		</sheet>
+	</element>
+	<element name="Aura of the Sentinel" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_TCOE_ARCHETYPE_FEATURE_OATH_OF_THE_WATCHERS_">
+		<description>
+			<p>You emit an aura of alertness while you aren't incapacitated. When you and any creatures of your choice within 10 feet of you roll initiative, you all gain a bonus to initiative equal to your proficiency bonus.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>When you or creatures of your choice within {{aura of the sentinel:aura}} feet of you roll initiative, add {{proficiency}} to your initiative.</description>
+		</sheet>
+		<rules>
+			<stat name="aura of the sentinel:aura" value="10" bonus="aura of the sentinel"/>
+			<stat name="aura of the sentinel:aura" value="30" bonus="aura of the sentinel" level="18"/>
+		</rules>
+	</element>
+	<element name="Vigilant Rebuke" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_TCOE_ARCHETYPE_FEATURE_OATH_OF_THE_WATCHERS_VIGILANT_REBUKE">
+		<description>
+			<p>You've learned how to chastise anyone who dares wield beguilements against you and your wards. Whenever you or a creature you can see within 30 feet of you succeeds on an Intelligence, a Wisdom, or a Charisma saving throw, you can use your reaction to deal 2d8 + your Charisma modifier force damage to the creature that forced the saving throw.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Whenever you or a creature you can see within 30 feet of you succeeds on an Intelligence, a Wisdom, or a Charisma saving throw, you can use your reaction to deal 2d8 + {{modifier:charisma}} force damage to the creature that forced the saving throw.</description>
+		</sheet>
+	</element>
+	<element name="Mortal Bulwark" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_TCOE_ARCHETYPE_FEATURE_OATH_OF_THE_WATCHERS_MORTAL_BULWARK">
+		<description>
+			<p>You manifest a spark of divine power in defense of the mortal realms. As a bonus action, you gain the following benefits for 1 minute:</p>
+			<ul>
+				<li>You gain true sight with a range of 120 feet.</li>
+				<li>You have advantage on attack roles against abberations, celestials, elementals, fey, and fiends.</li>
+				<li>When you hit a creature with an attack role and deal damage to it, you can also force it to make a Charisma saving throw against your spell save DC. On a failed save, the creature is magically banished to its native plane of existence if it's currently not there. On a successful save, the creature can't be banished by this feature for 24 hours.</li>
+			</ul>
+			<p class="indent">Once you use this bonus action, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest" duration="1 minute">
+			<description>For 1 minute: Gain true sight with a range of 120ft. Advantage on attack roles against abberations, celestials, elementals, fey, and fiends. When you hit a creature with an attack role and deal damage to it, you can also force it to make a Charisma saving throw against your spell save DC. On a failed save, the creature is magically banished to its native plane of existence if it's currently not there. On a successful save, the creature can't be banished by this feature for 24 hours.</description>
+		</sheet>
+	</element>
+</elements>

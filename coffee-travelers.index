@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Eyad's Coffee Travelers</name>
+		<description>Stuff that's not working in Aurora that I just want to work man</description>
+		<author url="http://github.com/cdmistman/dnd-aurora">Keros Pumanath</author>
+		<update version="0.0.1">
+			<file name="coffee-travelers.index" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/coffee-travelers.index"/>
+		</update>
+	</info>
+	<files>
+		<file name="sources.xml" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/coffee-travelers/sources.xml"/>
+	</files>
+</index>

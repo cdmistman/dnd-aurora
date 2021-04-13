@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Paladin</name>
+		<description>Additional Druid stuff from Tasha's Cauldron of Everything</description>
+		<update version="0.0.1">
+			<file name="class-druid" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/tashas-cauldron/class-druid.xml"/>
+		</update>
+	</info>
+
+	<!-- Extra Features -->
+	<element name="Additional Druid Spells" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_TCOE_CLASS_FEATURE_DRUID_ADDITIONAL_SPELLS">
+		<supports>Druid</supports>
+		<description>
+			<p>The spells in the following list expand the Druid spell list in the <i>Player's Handbook.</i> The list is organized by spell level, not character level. If the spell can be cast as a ritual, the ritual tag appears after the spell's name.</p>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>protection from evil and good</em></td></tr>
+				<tr><td>2nd</td><td><em>augury (ritual), continual flame, enlarge/reduce, summon beast</em></td></tr>
+				<tr><td>3rd</td><td><em>aura of vitality, elemental weapon, revivify, summon fey</em></td></tr>
+				<tr><td>4th</td><td><em>divinition (ritual), fire shield, summon elemental</em></td></tr>
+				<tr><td>5th</td><td><em>cone of cold</em></td></tr>
+				<tr><td>6th</td><td><em>flesh to stone</em></td></tr>
+				<tr><td>7th</td><td><em>symbol</em></td></tr>
+				<tr><td>8th</td><td><em>incendiary cloud</em></td></tr>
+			</table>
+		</description>
+		<spellcasting name="Druid" extend="true">
+			<extend>ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD</extend>
+			<extend>ID_PHB_SPELL_AUGURY</extend>
+			<extend>ID_PHB_SPELL_CONTINUAL_FLAME</extend>
+			<extend>ID_PHB_SPELL_ENLARGE_REDUCE</extend>
+			<extend>ID_PHB_SPELL_AURA_OF_VITALITY</extend>
+			<extend>ID_PHB_SPELL_ELEMENTAL_WEAPON</extend>
+			<extend>ID_PHB_SPELL_REVIVIFY</extend>
+			<extend>ID_PHB_SPELL_DIVINATION</extend>
+			<extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
+			<extend>ID_PHB_SPELL_CONE_OF_COLD</extend>
+			<extend>ID_PHB_SPELL_FLESH_TO_STONE</extend>
+			<extend>ID_PHB_SPELL_SYMBOL</extend>
+			<extend>ID_PHB_SPELL_INCENDIARY_CLOUD</extend>
+		</spellcasting>
+	</element>
+	<element name="Wild Companion" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_TCOE_DRUID_FEATURE_WILD_COMPANION">
+		<supports>Druid</supports>
+		<description>
+			<p>You gain the ability to summon a spirit that assumes an animal form: as an action, you can expend a use of your Wild Shape feature to cast the <i>find familiar</i> spell, without material components.</p>
+			<p class="indent">When you cast a spell in this way, the familiar is a fey instead of a beast, and the familiar disappears after a number of hours equal to half your druid level.</p>
+		</description>
+		<sheet action="Action" usage="1 Wild Shape use." level="2">
+			<description>Expend one use of Wild Shape to cast <i>find familiar</i> without material components. The summoned familiar is a fey instead of a beast, and the familiar disappears after {{level:druid:half}} hours.</description>
+		</sheet>
+	</element>
+	<element name="Cantrip Versatility" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_TCOE_DRUID_FEATURE_CANTRIP_VERSATILITY">
+		<supports>Druid</supports>
+		<description>
+			<p>Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the druid spell list.</p>
+		</description>
+		<sheet>
+			<description>Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the druid spell list.</description>
+		</sheet>
+	</element>
+
+	<!-- TODO: circles -->
+</elements>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Coffee Travelers</name>
+		<description>Custom values that are needed for Coffee Travelers that Aurora won't let us manage ourselves</description>
+		<author url="https://github.com/cdmistman/dnd-aurora">Keros Pumanath</author>
+		<update version="0.0.1">
+			<file name="sources.xml" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/coffee-travelers/sources.xml"/>
+		</update>
+	</info>
+
+</elements>

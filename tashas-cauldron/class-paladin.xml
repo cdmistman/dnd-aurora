@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Paladin</name>
+		<description>Additional Paladin stuff from Tasha's Cauldron of Everything</description>
+		<update version="0.0.1">
+			<file name="class-paladin" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/tashas-cauldron/class-paladin.xml"/>
+		</update>
+	</info>
+
+	<!-- Fighting styles -->
+	<element name="Blessed Warrior" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_TCOE_CLASS_FEATURE_PALADIN_FIGHTING_STYLE_BLESSED_WARRIOR">
+		<supports>Fighting Style, Paladin</supports>
+		<description>
+			<p>You learn two cantrips of your choice from the cleric spell list. They count as paladin spells for you, and Charisma is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the cleric spell list.</p>
+		</description>
+		<sheet>
+			<description>You learn two cantrips of your choice from the cleric spell list. They count as paladin spells for you, and Charisma is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the cleric spell list.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip, Blessed Warrior" supports="0,Cleric" />
+			<select type="Spell" name="Cantrip, Blessed Warrior" supports="0,Cleric" />
+		</rules>
+	</element>
+	<element name="Blind Fighting" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_TCOE_CLASS_FEATURE_PALADING_FIGHTING_STYLE_BLIND_FIGHTING">
+		<supports>Fighting Style, Paladin</supports>
+		<description>
+			<p>You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</p>
+		</description>
+		<sheet>
+			<description>You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+		</rules>
+		<setters>
+			<set name="senses">blindsight 10ft.</set>
+		</setters>
+	</element>
+	<element name="Interception" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_TCOE_CLASS_FEATURE_PALADIN_FIGHTING_STYLE_INTERCEPTION">
+		<supports>Fighting Style, Paladin</supports>
+		<description>
+			<p>When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10 + your proficiency bonus (to a minimum of 0 damage). You must be wielding a shield or a simple or martial weapon to use this reaction.</p>
+		</description>
+			<description>When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10 + your proficiency bonus (to a minimum of 0 damage). You must be wielding a shield or a simple or martial weapon to use this reaction.</description>
+		<sheet>
+		</sheet>
+	</element>
+
+	<!-- new class features for Paladin -->
+	<element name="Harness Divine Power" type="Class Feature" source="Tasha's Cauldron of Everything" id="ID_TCOE_CLASS_FEATURE_PALADIN_HARNESS_DIVINE_POWER">
+		<supports>Paladin</supports>
+		<description>
+			<p>You can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 3rd level, once; 7th level, twice; and 15th level, thrice. You regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>You can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 3rd level, once; 7th level, twice; and 15th level, thrice. You regain all expended uses when you finish a long rest.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<update version="0.0.1">
+			<file name="spells" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/tashas-cauldron/spells.xml"/>
+		</update>
+	</info>
+
+	<!-- Tasha's adds spells from Player's Handbook to the Paladin class... -->
+  <element name="Gentle Repose" type="Spell" source="Tasha's Cauldron of Everything" id="ID_TCOE_SPELL_GENTLE_REPOSE">
+    <supports>Cleric, Paladin, Wizard</supports>
+    <description>
+      <p>You touch a corpse or other remains. For the duration, the target is protected from decay and can’t become undead. The spell also effectively extends the time limit on raising the target from the dead, since days spent under the influence of this spell don’t count against the time limit of spells such as raise dead.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Necromancy</set>
+      <set name="time">1 action</set>
+      <set name="duration">10 days</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a pinch of salt and one copper piece placed on each of the corpse’s eyes, which must remain there for the duration</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+  <element name="Prayer of Healing" type="Spell" source="Tasha's Cauldron of Everything" id="ID_TCOE_SPELL_PRAYER_OF_HEALING">
+    <supports>Cleric, Paladin</supports>
+    <description>
+      <p>Up to six creatures of your choice that you can see within range each regain hit points equal to 2d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>
+      <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d8 for each slot level above 2nd.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Evocation</set>
+      <set name="time">10 minutes</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">30 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Warding Bond" type="Spell" source="Tasha's Cauldron of Everything" id="ID_TCOE_SPELL_WARDING_BOND">
+    <supports>Cleric, Paladin</supports>
+    <description>
+			<p>This spell wards a willing creature you touch and creates a mystic connection between you and the target until the spell ends. While the target is within 60 feet of you, it gains a +1 bonus to AC and saving throws, and it has resistance to all damage. Also, each time it takes damage, you take the same amount of damage.</p>
+			<p class="indent">The spell ends if you drop to 0 hit points or if you and the target become separated by more than 60 feet. It also ends if the spell is cast again on either of the connected creatures. You can also dismiss the spell as an action.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Abjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 hour</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a pair of platinum rings worth at least 50 gp each, which you and target must wear for the duration</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+
+	<!-- New spells from Tasha's -->
+	<element name="Spirit Shroud" type="Spell" source="Tasha's Cauldron of Everything" id="ID_TCOE_SPELL_SPIRIT_SHROUD">
+		<supports>Cleric, Paladin, Warlock, Wizard</supports>
+		<description>
+			<p>You call forth spirits of the dead, which flit around you for the spell's duration. The spirits are intangible and invlunerable.</p>
+			<p class="indent">Until the spell ends, any attack you make deals 1d8 damage when you hit a creature within 10 feet of you. This damage is radiant, necrotic, or cold (your choice when you cast the spell). Any creature that takes this damage can't regain hit points until the start of your next turn.</p>
+			<p class="indent">In addition, any creature of your choice that you can see that starts its turn within 10 feet of you has its speed reduced by 10 feet until the start of your next turn.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for every two slot levels above 3rd.</p>
+		</description>
+	</element>
+	<setters>
+		<set name="keywords"></set>
+		<set name="level">3</set>
+		<set name="school">Necromancy</set>
+		<set name="time">1 bonus action</set>
+		<set name="duration">1 minutes</set>
+		<set name="range">Self</set>
+		<set name="hasVerbalComponent">true</set>
+		<set name="hasSomaticComponent">true</set>
+		<set name="hasMaterialComponent">false</set>
+		<set name="materialComponent" />
+		<set name="isConcentration">true</set>
+		<set name="isRitual">false</set>
+	</setters>
+	<element name="Summon Celestial" type="Spell" source="Tasha's Cauldron of Everything" id="ID_TCOE_SPELL_SUMMON_CELESTIAL">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<p>You call forth a celestial spirit. It manifests in an angelic form in an unoccupied space that you can see within range. This corporeal form uses the Celestial Spirit stat block. When you cast the spell, choose Avenger or Defender. Your choice determines the creature's attack in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends</p>
+			<p class="indent">The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, use the higher level wherever the spell's level appears in the stat block.</p>
+		</description>
+	</element>
+	<setters>
+		<set name="keywords"></set>
+		<set name="level">5</set>
+		<set name="school">Conjuration</set>
+		<set name="time">1 action</set>
+		<set name="duration">1 hour</set>
+		<set name="range">90 feet</set>
+		<set name="hasVerbalComponent">true</set>
+		<set name="hasSomaticComponent">true</set>
+		<set name="hasMaterialComponent">true</set>
+		<set name="materialComponent">A golden reliquary worth at least 500 gp.</set>
+		<set name="isConcentration">true</set>
+		<set name="isRitual">false</set>
+	</setters>
+</elements>
