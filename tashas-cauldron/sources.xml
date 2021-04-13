@@ -4,7 +4,7 @@
 		<name>Tasha's Cauldron of Everything</name>
 		<description>Stuff borrowed from Tasha's Cauldron of Everything because it's too new and Aurora isn't actively maintained anymore</description>
 		<author url="http://github.com/cdmistman/tashas-cauldron">Wizards of the Coast</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="tashas-cauldron.index" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/tashas-cauldron.index"/>
 		</update>
 	</info>
