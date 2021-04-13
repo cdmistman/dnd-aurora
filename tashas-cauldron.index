@@ -4,7 +4,7 @@
 		<name>Tasha's Cauldron of Everything</name>
 		<description>Stuff borrowed from Tasha's Cauldron of Everything because it's too new and Aurora isn't actively maintained anymore</description>
 		<author url="http://github.com/cdmistman/tashas-cauldron">Wizards of the Coast</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="tashas-cauldron.index" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/tashas-cauldron.index"/>
 		</update>
 	</info>
@@ -15,11 +15,11 @@
 		<file name="spells" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/tashas-cauldron/spells.xml"/>
 
 		<!-- Druid -->
-		<file name="class-druid" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/tashas-cauldron/class-druid.xml"/>
+		<!-- <file name="class-druid" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/tashas-cauldron/class-druid.xml"/> -->
 
 		<!-- Paladin -->
-		<file name="class-paladin" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/tashas-cauldron/class-paladin.xml"/>
+		<!-- <file name="class-paladin" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/tashas-cauldron/class-paladin.xml"/>
 		<file name="paladin-oath-glory" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/tashas-cauldron/paladin-oath-glory.xml"/>
-		<file name="paladin-oath-watchers" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/tashas-cauldron/paladin-oath-watchers.xml"/>
+		<file name="paladin-oath-watchers" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/tashas-cauldron/paladin-oath-watchers.xml"/> -->
 	</files>
 </index>
