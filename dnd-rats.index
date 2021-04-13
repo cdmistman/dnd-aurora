@@ -2,13 +2,15 @@
 <index>
 	<info>
 		<name>Bjorn's DND Rats</name>
-		<description>Stuff that's not working in Aurora that I just want to work man</description>
-		<author url="http://github.com/cdmistman/dnd-aurora">Erdan Hith</author>
-		<update version="0.0.3">
+		<description>Stuff Bjorn created for our campaign.</description>
+		<author url="http://github.com/cdmistman/dnd-aurora">Bjorn Ironside</author>
+		<update version="0.0.4">
 			<file name="dnd-rats.index" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/dnd-rats.index"/>
 		</update>
 	</info>
 	<files>
-		<file name="sources.xml" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/dnd-rats/sources.xml"/>
+		<file name="source.xml" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/dnd-rats/source.xml"/>
+
+		<file name="armor.xml" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/dnd-rats/armor.xml"/>
 	</files>
 </index>

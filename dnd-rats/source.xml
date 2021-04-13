@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<update version="0.0.4">
+			<file name="source.xml" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/dnd-rats/sources.xml"/>
+		</update>
+	</info>
+	<element name="Bjorn's Edron Homebrew" type="Source" source="Custom" id="ID_HB_EDRON">
+		<description>
+			<![CDATA[<p><strong>Bjorn's homebrew world, called Edron.</strong></p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">BJORN</set>
+			<set name="url">https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/dnd-rats/sources.xml</set>
+			<set name="author" abbreviation="BJORN">Bjorn Ironside</set>
+			<set name="official">false</set>
+			<set name="supplement">true</set>
+		</setters>
+	</element>
+</elements>

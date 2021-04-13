@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
 	<info>
-		<name>DND Rats</name>
-		<description>Custom values that are needed for DND Rats that Aurora won't let us manage ourselves</description>
+		<name>DND Rats Armor</name>
+		<description>Custom Armor values</description>
 		<author url="https://github.com/cdmistman/dnd-aurora">Erdan Hith</author>
 		<update version="0.0.3">
-			<file name="sources.xml" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/dnd-rats/sources.xml"/>
+			<file name="armor.xml" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/dnd-rats/armor.xml"/>
 		</update>
 	</info>
 
