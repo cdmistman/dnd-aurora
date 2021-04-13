@@ -18,8 +18,8 @@
 		<!-- <file name="class-druid" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/tashas-cauldron/class-druid.xml"/> -->
 
 		<!-- Paladin -->
-		<file name="class-paladin" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/tashas-cauldron/class-paladin.xml"/>
-		<!-- <file name="paladin-oath-glory" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/tashas-cauldron/paladin-oath-glory.xml"/> -->
+		<!-- <file name="class-paladin" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/tashas-cauldron/class-paladin.xml"/> -->
+		<file name="paladin-oath-glory" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/tashas-cauldron/paladin-oath-glory.xml"/>
 		<!-- <file name="paladin-oath-watchers" url="https://raw.githubusercontent.com/cdmistman/dnd-aurora/main/tashas-cauldron/paladin-oath-watchers.xml"/> -->
 	</files>
 </index>
