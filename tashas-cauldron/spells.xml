@@ -8,6 +8,7 @@
 	</info>
 
 	<!-- Tasha's adds spells from Player's Handbook to the Paladin class... -->
+  <!-- TODO: get rid of these redefines -->
   <element name="Gentle Repose" type="Spell" source="Tasha's Cauldron of Everything" id="ID_TCOE_SPELL_GENTLE_REPOSE">
     <supports>Cleric, Paladin, Wizard</supports>
     <description>
@@ -72,6 +73,7 @@
   </element>
 
 	<!-- New spells from Tasha's -->
+  <!-- TODO: these aren't showing up :( -->
 	<element name="Spirit Shroud" type="Spell" source="Tasha's Cauldron of Everything" id="ID_TCOE_SPELL_SPIRIT_SHROUD">
 		<supports>Cleric, Paladin, Warlock, Wizard</supports>
 		<description>
